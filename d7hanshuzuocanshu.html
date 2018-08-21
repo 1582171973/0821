@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //函数做参数
+    // var str=function(){
+    //     alert("是的");
+    // }
+    // function show(fn){
+    //     fn();
+    // }
+    // show(str);
+
+
+
+        //函数立即调用(匿名函数)();  不带参数
+    // var show=function(){
+    //     alert("嗯")
+    // }
+    // show();
+    //二者等同
+    // (function(){
+    //     alert("嗯")
+    // })();
+
+    //函数立即调用(匿名函数)();  带参数
+    // var show=function(name){
+    //     alert(name);
+    // }
+    // show("是吧");
+    //二者等同
+    (function show(name){
+        alert(name)
+    })("王");
+
+    </script>
+</body>
+</html>
