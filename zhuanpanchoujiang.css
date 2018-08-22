@@ -1,0 +1,4 @@
+body,div,{margin: 0;padding: 0;}
+#box{width: 422px;height: 422px;position: relative;}
+#pic1{margin: 100px 0 0 200px;transition: 2s;}
+#pic2{position: absolute;left: 346px;top:199px;}

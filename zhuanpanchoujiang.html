@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="zhuanpanchoujiang.css">
+</head>
+<body>
+    <div id="box">
+        <img src="images/index.png" id="pic1">
+        <img src="images/point.png" id="pic2">
+    </div>
+    <script>
+        var oPic1=document.getElementById("pic1");
+        var oPic2=document.getElementById("pic2");
+        var arr=['30元免费流量包','20猫币','20元免费流量包','10元免费流量包','5猫币','谢谢参与','10猫币','一等奖','2猫币','100元免费流量包'];
+        var r=s=0;
+        oPic2.onclick=function(){
+            show();
+        }
+        function show(){
+            r=Math.floor(Math.random()*10);
+            s=r*36+720;
+            oPic1.style.transform="rotate("+s+"deg)"
+            setTimeout(function(){
+                alert("恭喜您获得"+arr[r]);
+                location.reload();},3000)
+        }
+
+    
+    
+    
+    </script>
+</body>
+</html>
